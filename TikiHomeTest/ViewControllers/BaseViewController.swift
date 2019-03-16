@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MBProgressHUD
 
 class BaseViewController: UIViewController {
 
@@ -23,5 +24,13 @@ class BaseViewController: UIViewController {
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
         
+    }
+    
+    func showLoadingView() {
+        MBProgressHUD.showAdded(to: self.view, animated: true)
+    }
+    
+    func hideLoadingView() {
+        MBProgressHUD.hide(for: self.view, animated: true)
     }
 }

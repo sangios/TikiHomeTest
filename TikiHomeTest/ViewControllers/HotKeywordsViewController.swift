@@ -36,9 +36,11 @@ class HotKeywordsViewController: BaseViewController {
                     self?.viewModel.loadKeywords()
                 })
             }
+            self?.hideLoadingView()
             self?.collectionView.reloadData()
         }
         
+        self.showLoadingView()
         viewModel.loadKeywords()
     }
 }

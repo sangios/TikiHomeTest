@@ -76,6 +76,9 @@ extension HotKeywordsViewController: UICollectionViewDelegate {
 extension HotKeywordsViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let vm = viewModel[indexPath]
-        return HotKeywordCell.getSizeForText(vm.text)
+        if vm.calculatedSize == nil {
+            vm.calculatedSize = HotKeywordCell.getSizeForText(vm.text)
+        }
+        return vm.calculatedSize!
     }
 }

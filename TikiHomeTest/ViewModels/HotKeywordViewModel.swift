@@ -11,6 +11,7 @@ import UIKit
 class HotKeywordViewModel: BaseViewModel {
     private var keyword: Keyword
     var text: String
+    var calculatedSize: CGSize? // To improve performace when scroll cell
     
     var iconURL: URL? {
         guard let link = keyword.icon else { return nil }

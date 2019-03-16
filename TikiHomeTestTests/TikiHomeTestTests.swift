@@ -30,7 +30,7 @@ class TikiHomeTestTests: XCTestCase {
     
     func testTwoWords() {
         let inputKeyword = "iPhone iPhone"
-        let finalKeyword = "iPhone\n iPhone"
+        let finalKeyword = "iPhone\niPhone"
         
         let keyword = Keyword(text: inputKeyword, icon: nil)
         let viewModel = HotKeywordViewModel(keyword: keyword)
@@ -39,7 +39,7 @@ class TikiHomeTestTests: XCTestCase {
     
     func testThreeWords() {
         let inputKeyword = "iPhone iPhone iPhone"
-        let finalKeyword = "iPhone iPhone\niPhone"
+        let finalKeyword = "iPhone\niPhone iPhone"
         
         let keyword = Keyword(text: inputKeyword, icon: nil)
         let viewModel = HotKeywordViewModel(keyword: keyword)

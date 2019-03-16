@@ -25,7 +25,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="213.5"/>
                                         <subviews>
                                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" insetsLayoutMarginsFromSafeArea="NO" image="tiki_icon" translatesAutoresizingMaskIntoConstraints="NO" id="v9F-qU-MbM">
-                                                <rect key="frame" x="137.5" y="57" width="100" height="100"/>
+                                                <rect key="frame" x="137.5" y="20" width="100" height="100"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="v9F-qU-MbM" secondAttribute="height" multiplier="1:1" id="QMv-AN-yjm"/>
                                                     <constraint firstAttribute="width" constant="100" id="sZM-RP-1jm"/>
@@ -34,7 +34,7 @@
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstItem="v9F-qU-MbM" firstAttribute="centerY" secondItem="uhN-So-Q2P" secondAttribute="centerY" id="hPK-oZ-FVN"/>
+                                            <constraint firstItem="v9F-qU-MbM" firstAttribute="top" secondItem="uhN-So-Q2P" secondAttribute="top" constant="20" id="ec3-VP-vVp"/>
                                             <constraint firstItem="v9F-qU-MbM" firstAttribute="centerX" secondItem="uhN-So-Q2P" secondAttribute="centerX" id="qfp-IC-Pvc"/>
                                         </constraints>
                                     </view>

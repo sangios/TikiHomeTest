@@ -61,11 +61,15 @@ class HotKeywordViewModel: BaseViewModel {
         }
         self.text = text
         
-        logger.debug("\n" + keyword.text)
-        logger.debug("\n" + String(firstHalfLine1))
-        logger.debug("\n" + String(firstHalfLine2))
-        logger.debug("\n" + String(lastHalfLine1))
-        logger.debug("\n" + String(lastHalfLine2))
-        logger.debug("\n" + text)
+        logger.debug(
+            "\n--------------------------------" +
+            "\n" + keyword.text +
+            "\n" + String(firstHalfLine1) +
+            "\n" + String(firstHalfLine2) +
+            "\n" + String(lastHalfLine1) +
+            "\n" + String(lastHalfLine2) +
+            "\n" + text +
+            "\n--------------------------------"
+        )
     }
 }

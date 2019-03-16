@@ -15,6 +15,7 @@ extension CloudAPI {
         let api = "\(host)\(API.keywords.rawValue)"
         connector.get(api, token: self.token) { (response) in
             if let error = response.error {
+                logger.error(error.localizedDescription)
                 completion([], error)
                 return
             }
@@ -26,14 +27,17 @@ extension CloudAPI {
                                     userInfo: nil)
                 
                 guard let dict = response.data as? [String: Any] else {
+                    logger.error(error.localizedDescription)
                     completion([], error)
                     return
                 }
                 guard let data = dict["keywords"] as? [Any] else {
+                    logger.error(error.localizedDescription)
                     completion([], error)
                     return
                 }
                 guard let keywords = Mapper<Keyword>().mapArray(JSONObject: data) else {
+                    logger.error(error.localizedDescription)
                     completion([], error)
                     return
                 }
@@ -43,6 +47,7 @@ extension CloudAPI {
                 let error = NSError(domain: CloudAPIDomain,
                                     code: response.code.rawValue,
                                     userInfo: nil)
+                logger.error(error.localizedDescription)
                 completion([], error)
             }
         }

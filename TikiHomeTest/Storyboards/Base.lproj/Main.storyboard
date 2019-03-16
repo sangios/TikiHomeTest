@@ -22,27 +22,14 @@
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uhN-So-Q2P">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="213.5"/>
-                                        <subviews>
-                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" insetsLayoutMarginsFromSafeArea="NO" image="tiki_icon" translatesAutoresizingMaskIntoConstraints="NO" id="v9F-qU-MbM">
-                                                <rect key="frame" x="137.5" y="20" width="100" height="100"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" secondItem="v9F-qU-MbM" secondAttribute="height" multiplier="1:1" id="QMv-AN-yjm"/>
-                                                    <constraint firstAttribute="width" constant="100" id="sZM-RP-1jm"/>
-                                                </constraints>
-                                            </imageView>
-                                        </subviews>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="223.5"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstItem="v9F-qU-MbM" firstAttribute="top" secondItem="uhN-So-Q2P" secondAttribute="top" constant="20" id="ec3-VP-vVp"/>
-                                            <constraint firstItem="v9F-qU-MbM" firstAttribute="centerX" secondItem="uhN-So-Q2P" secondAttribute="centerX" id="qfp-IC-Pvc"/>
-                                        </constraints>
                                     </view>
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="V4L-e2-IWV">
-                                        <rect key="frame" x="0.0" y="213.5" width="375" height="220"/>
+                                        <rect key="frame" x="0.0" y="223.5" width="375" height="200"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="220" id="yWu-co-S4b"/>
+                                            <constraint firstAttribute="height" constant="200" id="yWu-co-S4b"/>
                                         </constraints>
                                         <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="16" minimumInteritemSpacing="16" id="o9R-VI-6FQ">
                                             <size key="itemSize" width="96" height="200"/>
@@ -57,18 +44,21 @@
                                         </connections>
                                     </collectionView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yf3-Fl-r5T">
-                                        <rect key="frame" x="0.0" y="433.5" width="375" height="213.5"/>
+                                        <rect key="frame" x="0.0" y="423.5" width="375" height="223.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Được tìm kiếm nhiều nhất " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JnF-5S-qTv">
-                                                <rect key="frame" x="0.0" y="0.0" width="375" height="33.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="N0T-9g-SsG"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" insetsLayoutMarginsFromSafeArea="NO" image="tiki_banner" translatesAutoresizingMaskIntoConstraints="NO" id="iqB-1K-zFi">
-                                                <rect key="frame" x="0.0" y="133.5" width="375" height="60"/>
+                                                <rect key="frame" x="0.0" y="153.5" width="375" height="60"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="60" id="pkX-yC-CHA"/>
+                                                    <constraint firstAttribute="height" priority="900" constant="60" id="pkX-yC-CHA"/>
                                                 </constraints>
                                             </imageView>
                                         </subviews>
@@ -78,11 +68,12 @@
                                             <constraint firstAttribute="trailing" secondItem="iqB-1K-zFi" secondAttribute="trailing" id="FfP-wz-xij"/>
                                             <constraint firstAttribute="trailing" secondItem="iqB-1K-zFi" secondAttribute="trailing" id="T9e-jK-hvU"/>
                                             <constraint firstItem="iqB-1K-zFi" firstAttribute="leading" secondItem="Yf3-Fl-r5T" secondAttribute="leading" id="Vf5-SJ-7c6"/>
+                                            <constraint firstItem="iqB-1K-zFi" firstAttribute="top" relation="greaterThanOrEqual" secondItem="JnF-5S-qTv" secondAttribute="bottom" id="aLw-Rq-uFl"/>
                                             <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="JnF-5S-qTv" secondAttribute="bottom" id="cju-iV-9II"/>
                                             <constraint firstItem="JnF-5S-qTv" firstAttribute="top" secondItem="Yf3-Fl-r5T" secondAttribute="top" id="fBs-kp-6E9"/>
                                             <constraint firstItem="iqB-1K-zFi" firstAttribute="leading" secondItem="Yf3-Fl-r5T" secondAttribute="leading" id="jQN-EW-oYs"/>
                                             <constraint firstItem="JnF-5S-qTv" firstAttribute="leading" secondItem="Yf3-Fl-r5T" secondAttribute="leading" id="oUx-3Y-ZOl"/>
-                                            <constraint firstAttribute="bottom" secondItem="iqB-1K-zFi" secondAttribute="bottom" constant="20" id="rfE-3h-cRe"/>
+                                            <constraint firstAttribute="bottom" secondItem="iqB-1K-zFi" secondAttribute="bottom" constant="10" id="rfE-3h-cRe"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -132,6 +123,5 @@
     </scenes>
     <resources>
         <image name="tiki_banner" width="158" height="80"/>
-        <image name="tiki_icon" width="225" height="225"/>
     </resources>
 </document>

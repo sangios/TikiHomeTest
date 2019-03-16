@@ -55,9 +55,63 @@ class TikiHomeTestTests: XCTestCase {
         XCTAssert(finalKeyword == viewModel.text, "Result: \(viewModel.text) - Expected: \(finalKeyword)")
     }
     
+    func testThreeWords3() {
+        let inputKeyword = "iPhone XS Max2"
+        let finalKeyword = "iPhone\nXS Max2"
+        
+        let keyword = Keyword(text: inputKeyword, icon: nil)
+        let viewModel = HotKeywordViewModel(keyword: keyword)
+        XCTAssert(finalKeyword == viewModel.text, "Result: \(viewModel.text) - Expected: \(finalKeyword)")
+    }
+    
     func testFourWords() {
         let inputKeyword = "iPhone iPhone X M"
         let finalKeyword = "iPhone\niPhone X M"
+        
+        let keyword = Keyword(text: inputKeyword, icon: nil)
+        let viewModel = HotKeywordViewModel(keyword: keyword)
+        XCTAssert(finalKeyword == viewModel.text, "Result: \(viewModel.text) - Expected: \(finalKeyword)")
+    }
+    
+    func testFourWords2() {
+        let inputKeyword = "iPhoneiPhone X M"
+        let finalKeyword = "iPhoneiPhone\nX M"
+        
+        let keyword = Keyword(text: inputKeyword, icon: nil)
+        let viewModel = HotKeywordViewModel(keyword: keyword)
+        XCTAssert(finalKeyword == viewModel.text, "Result: \(viewModel.text) - Expected: \(finalKeyword)")
+    }
+    
+    func testFourWords3() {
+        let inputKeyword = "iPhone iPhone iPhone iPhone"
+        let finalKeyword = "iPhone iPhone\niPhone iPhone"
+        
+        let keyword = Keyword(text: inputKeyword, icon: nil)
+        let viewModel = HotKeywordViewModel(keyword: keyword)
+        XCTAssert(finalKeyword == viewModel.text, "Result: \(viewModel.text) - Expected: \(finalKeyword)")
+    }
+    
+    func testFourWords4() {
+        let inputKeyword = "iPhone iPhoneXS iPhone iPhone"
+        let finalKeyword = "iPhone iPhoneXS\niPhone iPhone"
+        
+        let keyword = Keyword(text: inputKeyword, icon: nil)
+        let viewModel = HotKeywordViewModel(keyword: keyword)
+        XCTAssert(finalKeyword == viewModel.text, "Result: \(viewModel.text) - Expected: \(finalKeyword)")
+    }
+    
+    func testFourWords5() {
+        let inputKeyword = "iPhone iPhone iPhoneXS iPhone"
+        let finalKeyword = "iPhone iPhone\niPhoneXS iPhone"
+        
+        let keyword = Keyword(text: inputKeyword, icon: nil)
+        let viewModel = HotKeywordViewModel(keyword: keyword)
+        XCTAssert(finalKeyword == viewModel.text, "Result: \(viewModel.text) - Expected: \(finalKeyword)")
+    }
+    
+    func testFourWords6() {
+        let inputKeyword = "iPhoneXXXXXXXXXX iPhone iPhone iPhone"
+        let finalKeyword = "iPhoneXXXXXXXXXX\niPhone iPhone iPhone"
         
         let keyword = Keyword(text: inputKeyword, icon: nil)
         let viewModel = HotKeywordViewModel(keyword: keyword)
@@ -67,8 +121,7 @@ class TikiHomeTestTests: XCTestCase {
     func testPerformanceExample() {
         // This is an example of a performance test case.
         self.measure {
-            // Put the code you want to measure the time of here.
+            
         }
     }
-
 }

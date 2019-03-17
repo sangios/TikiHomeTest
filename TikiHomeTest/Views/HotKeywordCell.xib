@@ -32,8 +32,8 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oeM-Zi-eGZ">
                                 <rect key="frame" x="0.0" y="112" width="375" height="48"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Key" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nNK-uJ-IVV">
-                                        <rect key="frame" x="8" y="4" width="359" height="40"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Key" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nNK-uJ-IVV">
+                                        <rect key="frame" x="2" y="4" width="371" height="40"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="Mvp-zo-3bL"/>
@@ -45,10 +45,10 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="nNK-uJ-IVV" secondAttribute="trailing" constant="8" id="E6I-Yg-P7c"/>
+                                    <constraint firstAttribute="trailing" secondItem="nNK-uJ-IVV" secondAttribute="trailing" constant="2" id="E6I-Yg-P7c"/>
                                     <constraint firstItem="nNK-uJ-IVV" firstAttribute="top" secondItem="oeM-Zi-eGZ" secondAttribute="top" constant="4" id="dP9-5Q-soP"/>
                                     <constraint firstAttribute="bottom" secondItem="nNK-uJ-IVV" secondAttribute="bottom" constant="4" id="djh-7a-38J"/>
-                                    <constraint firstItem="nNK-uJ-IVV" firstAttribute="leading" secondItem="oeM-Zi-eGZ" secondAttribute="leading" constant="8" id="o40-wl-iwP"/>
+                                    <constraint firstItem="nNK-uJ-IVV" firstAttribute="leading" secondItem="oeM-Zi-eGZ" secondAttribute="leading" constant="2" id="o40-wl-iwP"/>
                                 </constraints>
                             </view>
                         </subviews>
